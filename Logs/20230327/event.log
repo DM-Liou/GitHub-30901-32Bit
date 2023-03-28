@@ -139,3 +139,23 @@
 09:19:15.008  [全] MDS=1 Symbol=2330,ref=539,open=533,high=536,low=532,up=592,dn=485.5000,mattime=091914860143,matpri=533,matqty=1,tmatqty=3336,bestbq=1066,305,388,209,299,bestbp=532,531,530,529,528,bestsq=39,182,263,325,460,bestsp=533,534,535,536,537
 09:19:17.772  [全] MDS=1 Symbol=2330,ref=539,open=533,high=536,low=532,up=592,dn=485.5000,mattime=091914860143,matpri=533,matqty=1,tmatqty=3336,bestbq=1067,305,388,209,299,bestbp=532,531,530,529,528,bestsq=39,182,263,325,460,bestsp=533,534,535,536,537
 09:19:17.773  [全] MDS=1 Symbol=2330,ref=539,open=533,high=536,low=532,up=592,dn=485.5000,mattime=091914860143,matpri=533,matqty=1,tmatqty=3336,bestbq=1066,305,388,209,299,bestbp=532,531,530,529,528,bestsq=39,182,263,325,460,bestsp=533,534,535,536,537
+20:11:09.965  [Ｕ] User(E123632952) Ip(203.66.93.84) Port(82) MarketType(2) SetMap(1)
+20:11:10.229  [時] MDS=2 Type=C,Time=201110149000
+20:11:10.440  [全] MDS=2 Symbol=1101,ref=0,open=0,high=0,low=0,up=0,dn=0,mattime=,matpri=0,matqty=,tmatqty=,bestbq=,,,,,bestbp=0,0,0,0,0,bestsq=,,,,,bestsp=0,0,0,0,0
+20:11:10.964  [Ｕ] Ses 2 Start Send Reg Data after 3 Ses By IsNowSendSes2_...
+20:11:14.067  [Ｕ] [OnTimerRegSes2] Start Work...
+20:11:14.067  [Ｕ] [OnTimerRegSes2] Set Mkt Step...
+20:11:14.067  [Ｕ] [OnTimerRegSes2] Send Mkt Reg Req...
+20:11:14.067  [Ｕ] [OnTimerRegSes2] Set Tick Step...
+20:11:17.096  [Ｕ] [OnTimerRegSes2] Send Tick Reg Req...
+20:11:17.096  [Ｕ] [OnTimerRegSes2] Finish!!
+20:12:07.653  [Ｕ] User(e123632952) Ip(apiquote.yuantafutures.com.tw) Port(80) MarketType(1) SetMap(0)
+20:12:07.654  [Ｕ] User(e123632952) Ip(apiquote.yuantafutures.com.tw) Port(82) MarketType(2) SetMap(0)
+20:12:08.017  [時] MDS=1 Type=C,Time=201207928000
+20:12:08.018  [時] MDS=2 Type=C,Time=201207949000
+20:12:26.547  [全] MDS=1 Symbol=2330,ref=539,open=533,high=536,low=531,up=592,dn=485.5000,mattime=133000000000,matpri=531,matqty=3882,tmatqty=16055,bestbq=746,1238,695,646,183,bestbp=531,530,529,528,527,bestsq=11,41,277,411,460,bestsp=532,533,534,535,536
+20:12:48.417  [全] MDS=1 Symbol=2327,ref=527,open=529,high=534,low=524,up=579,dn=474.5000,mattime=133000000000,matpri=533,matqty=363,tmatqty=2669,bestbq=3,17,39,17,156,bestbp=532,531,530,529,528,bestsq=75,90,141,90,32,bestsp=533,534,535,536,537
+06:30:32.464  [時] MDS=2 Type=C,Time=063032349000
+06:45:09.860  [時] MDS=1 Type=C,Time=064509753000
+06:45:33.148  [時] MDS=2 Type=C,Time=064533032000
+06:45:33.686  [時] MDS=2 Type=C,Time=064533563000
