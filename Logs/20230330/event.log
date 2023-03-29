@@ -1,0 +1,7 @@
+05:19:12.184  [Ｕ] User(e123632952) Ip(apiquote.yuantafutures.com.tw) Port(80) MarketType(1) SetMap(0)
+05:19:12.186  [Ｕ] User(e123632952) Ip(apiquote.yuantafutures.com.tw) Port(82) MarketType(2) SetMap(0)
+05:19:12.478  [時] MDS=2 Type=C,Time=051912481000
+05:19:12.479  [時] MDS=1 Type=C,Time=051912481000
+05:19:22.759  [全] MDS=1 Symbol=2330,ref=525,open=533,high=533,low=525,up=577,dn=472.5000,mattime=133000000000,matpri=530,matqty=4341,tmatqty=17248,bestbq=222,151,177,628,730,bestbp=529,528,527,526,525,bestsq=1067,506,614,730,252,bestsp=530,531,532,533,534
+06:45:32.395  [時] MDS=2 Type=C,Time=064532287000
+06:45:32.396  [時] MDS=1 Type=C,Time=064532287000
