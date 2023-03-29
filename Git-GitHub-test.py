@@ -1,5 +1,14 @@
 print('hello python & git')
 
+'''
+git status
+git add .
+git commit -m 'test'
+
+Git push origin main
+git log
+'''
+
 print('')
 
 print('2023 0327 21:33')
