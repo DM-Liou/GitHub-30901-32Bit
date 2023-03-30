@@ -488,28 +488,26 @@ def run_job():
 if __name__ == "__main__":
     print()
     print('This name = main then GO')
-    print('1. wx.App START')
     #------------------------------
     app=MyApp()    
     frame = AppFrame(None, title='YuantaQuoteAPI Sample',size = (670,370))
     frame.Show(True)
-    #--------------------------------
-    print('1. wx.App END')
+    print('1. 程式庫: wx     class: MyApp() / class: AppFrame()/   主劃面: START & END')
     print()
-
 # ----------------------------------------------------------
-    print('2. Bot = StockBot START')
+    print('2. Bot = class StockBot(frame.Handle)    START')
     Bot = StockBot(frame.Handle)  
-    print('2. Bot = StockBot END')
+    print('2. Bot = class StockBot END')
     print()
     # ----------------------------------------------------------
-    print('3. app.MainLoop() TO START LOOP')
-    app.MainLoop(run_job)
-    print('3. app.MainLoop() END')
+    print('3. LOOP 等待輸入帳號: app=MyApp() / app.MainLoop(run_job)     START LOOP')
+    print('3. LOOP........')
+    #app.MainLoop(run_job)
     print()
+    print('3. app=MyApp() / app.MainLoop(run_job)   END')
     # -------------------------------------
 
-    print('main-000-END')
+    print('4. This name = main then END')
 # ==========================================================================
 
 '''
