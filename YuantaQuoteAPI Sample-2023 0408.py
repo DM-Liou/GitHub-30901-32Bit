@@ -38,13 +38,15 @@ class AppFrame(wx.Frame):
 
         ############################################################################
         #   API連線資訊  wx.StaticText 是文字標籤, 純粹顯示文字標題
-        wx.StaticBox (pnl, label='API連線資訊', pos=(1, 1), size=(200, 148))
+        wx.StaticBox(pnl, label='API連線資訊', pos=(1, 1), size=(200, 148))
         wx.StaticText(pnl, label='身份帳號',    pos=(11, 30))
         wx.StaticText(pnl, label='密碼',        pos=(11, 60))
         self.acc = wx.TextCtrl(pnl, pos=(65, 26), size=(100, 25))
-        self.pwd = wx.TextCtrl(pnl, pos=(45, 55), size=(100, 25), style=wx.TE_PASSWORD)
+        self.pwd = wx.TextCtrl(pnl, pos=(45, 55), size=(
+            100, 25), style=wx.TE_PASSWORD)
 
-        logon = wx.Button(pnl, wx.ID_ANY, label='登入', pos=(11, 85), size=(40, 30))
+        logon = wx.Button(pnl, wx.ID_ANY, label='登入',
+                          pos=(11, 85), size=(40, 30))
         logon.Bind(wx.EVT_BUTTON, self.OnLogonBtn)
 
         self.connect_status = wx.TextCtrl(pnl, pos=(11, 118), size=(150, 25))
@@ -114,7 +116,7 @@ class AppFrame(wx.Frame):
     def OnLogonBtn(self, event):    # OnLogonBtn函数将帐户和密码发送到API进行登录
         LogonJob(Job.LOGON, self.acc.GetValue(), self.pwd.GetValue())
         ###################################################################################
-        
+
     def OnRegisterBtn(self, event):   # OnRegisterBtn 函数将商品代码、订阅模式和注册送到API。
         updatemodle = self.modle.GetString(self.modle.GetSelection())
         if self.rbAm.GetValue() == True:
@@ -314,18 +316,20 @@ class DeleteSymbol(Job):
         q.put(self)
 
 
-def DoJob(Bot, x):       ## Bot = StockBot(frame.Handle)
+def DoJob(Bot, x):  # Bot = StockBot(frame.Handle)
     print('4-2-0. START. def DoJob(Bot, x):  then case=1-6 in switch(x.job_type) ')
     for case in switch(x.job_type):
         if case(Job.LOGON):
             # ---------------------------------------------------------------------------
             print('4-2-1. START /CASE 1:case(Job.LOGON) / Bot = StockBot(frame.Handle)')
-            print('4-2-1.                                 Bot.login(x.account, x.password)')
-            Bot.login(x.account, x.password)     ##Bot = StockBot(frame.Handle)
-            print('4-2-1. END   /CASE 1:case(Job.LOGON) / Bot.login(x.account, x.password)')
+            print(
+                '4-2-1.                                 Bot.login(x.account, x.password)')
+            Bot.login(x.account, x.password)  # Bot = StockBot(frame.Handle)
+            print(
+                '4-2-1. END   /CASE 1:case(Job.LOGON) / Bot.login(x.account, x.password)')
             print('case break EXIT')
             break
-             # -----------------------------------------------------------------------------       
+            # -----------------------------------------------------------------------------
         if case(Job.REGISTER):
             print(x.job_type, x.regSymbol, x.modle[0])
             Bot.RegisterQuoteSymbol(x.regSymbol, x.modle, x.AmPm)
@@ -348,7 +352,7 @@ def DoJob(Bot, x):       ## Bot = StockBot(frame.Handle)
 
 
 class YuantaQuoteEvents(object):
-    #OnMktStatusChange
+    # OnMktStatusChange
     def __init__(self, parent):
         self.parent = parent
 
@@ -430,7 +434,7 @@ class YuantaQuoteWapper:
 
 
 class StockBot:  # Bot = StockBot(frame.Handle)
-    
+
     def __init__(self, botuid):
         self.Yuanta = YuantaQuoteWapper(botuid, self)
 
@@ -443,7 +447,8 @@ class StockBot:  # Bot = StockBot(frame.Handle)
         self.Yuanta.YuantaQuote.SetMktLogon(
             account, password, 'apiquote.yuantafutures.com.tw', '82', 2, 0)
         print('4-2-1-1. END.  class StockBot: /login  apiquote.yuantafutures.com.tw')
-        print('4-2-1-1.                        login  apiquote.yuantafutures.com.tw    login')
+        print(
+            '4-2-1-1.                        login  apiquote.yuantafutures.com.tw    login')
         # -----------------------------------------------------------------------------------------------------------
 
     def RegisterQuoteSymbol(self, QuoteSymbol, modle, ret_type):
@@ -513,13 +518,17 @@ def run_job():
         next_job = q.get()
         print('4-1. START/END    def run_job():   GET 輸入帳號資料  next_job = q.get()  ')
         print('------------------------------------------------------------------------------------------')
-        print('4-2. START        def run_job():   DO DoJob(Bot, next_job  and RETURN TO MainLoop(run_job)')
+        print(
+            '4-2. START        def run_job():   DO DoJob(Bot, next_job  and RETURN TO MainLoop(run_job)')
         print('------------------------------------------------------------------------------------------')
-        DoJob(Bot, next_job)   #4-2-XXXXXXXXXX
+        DoJob(Bot, next_job)  # 4-2-XXXXXXXXXX
         print('------------------------------------------------------------------------------------------')
-        print('4-2. END.         def run_job():   DO DoJob(Bot, next_job  and RETURN TO MainLoop(run_job)')
+        print(
+            '4-2. END.         def run_job():   DO DoJob(Bot, next_job  and RETURN TO MainLoop(run_job)')
         print('------------------------------------------------------------------------------------------')
         print('')
+
+
         # ----------------------------------------------------------------------------
 # ===========================================================================
 if __name__ == "__main__":
@@ -533,7 +542,7 @@ if __name__ == "__main__":
   # -------3. LOOP........ 等待輸入帳號 -------------------------------------
     print('3. START LOOP... 等待輸入帳號: LOOP....LOOP...LOOP...    app.MainLoop(run_job)     ')
     print()
-    app.MainLoop(run_job)  #4-2.
+    app.MainLoop(run_job)  # 4-2.
     # -------------------------------------
     print()
     print('END. This name = main then END')
