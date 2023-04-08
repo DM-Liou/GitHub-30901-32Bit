@@ -1,0 +1,16 @@
+01:01:16.963  [Ｕ] User(E123632952) Ip(apiquote.yuantafutures.com.tw) Port(80) MarketType(1) SetMap(0)
+01:01:16.965  [Ｕ] User(E123632952) Ip(apiquote.yuantafutures.com.tw) Port(82) MarketType(2) SetMap(0)
+01:01:17.444  [時] MDS=2 Type=C,Time=010117315000
+01:01:17.444  [時] MDS=1 Type=C,Time=010117315000
+01:18:17.095  [Ｕ] User(E123632952) Ip(apiquote.yuantafutures.com.tw) Port(80) MarketType(1) SetMap(0)
+01:18:17.097  [Ｕ] User(E123632952) Ip(apiquote.yuantafutures.com.tw) Port(82) MarketType(2) SetMap(0)
+01:18:17.798  [時] MDS=1 Type=C,Time=011817678000
+01:18:17.799  [時] MDS=2 Type=C,Time=011817678000
+01:43:03.687  [Ｕ] User(E123632952) Ip(apiquote.yuantafutures.com.tw) Port(80) MarketType(1) SetMap(0)
+01:43:03.689  [Ｕ] User(E123632952) Ip(apiquote.yuantafutures.com.tw) Port(82) MarketType(2) SetMap(0)
+01:43:04.166  [時] MDS=2 Type=C,Time=014304045000
+01:43:04.166  [時] MDS=1 Type=C,Time=014304055000
+01:44:32.643  [Ｕ] User(E123632955) Ip(apiquote.yuantafutures.com.tw) Port(80) MarketType(1) SetMap(0)
+01:44:32.645  [Ｕ] User(E123632955) Ip(apiquote.yuantafutures.com.tw) Port(82) MarketType(2) SetMap(0)
+01:44:33.121  [時] MDS=1 Type=C,Time=014432995000
+01:44:33.123  [時] MDS=2 Type=C,Time=014433001000
